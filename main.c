@@ -12,7 +12,7 @@ int main(void) {
   int counter = 0;
   while (1) {
     update_tamagotchi(&pet, counter);
-    display_status(pet);
+    display_status(&pet);
     display_main_menu();
 
     printf("\nEnter your choice: ");
@@ -24,7 +24,7 @@ int main(void) {
       feed(&pet);
       break;
     case 2:
-      // Playmain.c
+      // Play
       play(&pet);
       break;
     case 3:

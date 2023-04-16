@@ -14,12 +14,12 @@ void display_main_menu() {
   printf("6. Quit\n");
 }
 
-void display_status(Tamagochi pet) {
-  printf("\n%s's Status:\n", pet.name);
-  printf("Age: %d\n", pet.age);
-  printf("Hunger: %d\n", pet.hunger);
-  printf("Happiness: %d\n", pet.happiness);
-  printf("Health: %d\n", pet.health);
+void display_status(Tamagochi *pet) {
+  printf("\n%s's Status:\n", pet->name);
+  printf("Age: %d\n", pet->age);
+  printf("Hunger: %d\n", pet->hunger);
+  printf("Happiness: %d\n", pet->happiness);
+  printf("Health: %d\n", pet->health);
 }
 
 void feed(Tamagochi *pet) {

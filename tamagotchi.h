@@ -7,7 +7,7 @@ typedef struct {
 } Tamagochi;
 
 void display_main_menu();
-void display_status(Tamagochi pet);
+void display_status(Tamagochi *pet);
 void feed(Tamagochi *pet);
 void play(Tamagochi *pet);
 void sleep(Tamagochi *pet);
