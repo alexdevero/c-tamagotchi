@@ -1,4 +1,4 @@
-#include "./tamagotchi.h"
+#include "tamagotchi.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,7 +14,7 @@ void display_main_menu() {
   printf("6. Quit\n");
 }
 
-void display_status(Tamagochi *pet) {
+void display_status(const Tamagochi *pet) {
   printf("\n%s's Status:\n", pet->name);
   printf("Age: %d\n", pet->age);
   printf("Hunger: %d\n", pet->hunger);
